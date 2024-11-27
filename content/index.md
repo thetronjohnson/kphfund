@@ -1,7 +1,8 @@
-# KPH Fund
+# KPH VC
 
-Empowering Kerala's entrepreneurs to build world-class internet products.
+An exclusive, invite-only angel network empowering Kerala's most promising entrepreneurs to build world-class internet products and companies.
 
-We provide seed funding and mentorship to early-stage startups, backed by a community of Y Combinator alumni and successful founders.
+KPH VC is a highly-curated community of accomplished investors and veteran entrepreneurs. We maintain strict membership criteria to ensure meaningful value creation for both founders and investors.
 
-Building something cool? Contact hello@felixjosemon.com
+
+[Request an invite →](#)
