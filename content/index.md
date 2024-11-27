@@ -1,4 +1,4 @@
-# KPH VC
+# KPH Angel Network
 
 An exclusive, invite-only angel network empowering Kerala's most promising entrepreneurs to build world-class internet products and companies.
 
