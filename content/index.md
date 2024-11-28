@@ -6,5 +6,9 @@ KPH Angel Network is a highly-curated community of accomplished investors and ve
 
 We maintain strict membership criteria to ensure meaningful value creation for both founders and investors.
 
+Send us an email at [hello@felixjosemon.com](mailto:hello@felixjosemon.com) to learn more about joining our network.
 
-[Request an invite →](#)
+Contact: +91 70254 37098
+
+
+
