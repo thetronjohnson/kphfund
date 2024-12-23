@@ -1,7 +1,7 @@
 <template>
   <main class="min-h-screen bg-gradient-to-b from-white to-gray-50">
     <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-      <h1 class="text-5xl font-bold mb-8 text-black bg-clip-text text-transparent">
+      <h1 class="text-5xl font-bold mb-8 text-black bg-clip-text">
         KPH.VC
       </h1>
 
