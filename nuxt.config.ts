@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 },
   app: {
     head: {
-      title: "KPH Fund - Backing Kerala's Top 1% Startups",
+      title: "KPH VC - Backing Kerala's Top 1% Startups",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         },
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: "KPH Fund - Backing Kerala's Top 1% Startups" },
+        { property: 'og:title', content: "KPH VC - Backing Kerala's Top 1% Startups" },
         { 
           property: 'og:description', 
           content: 'KPH is an early-stage fund investing in Kerala\'s most promising startups. We back exceptional founders building the next generation of innovative companies.'
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         { property: 'og:image', content: '/kph.png' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: "KPH Fund - Backing Kerala's Top 1% Startups" },
+        { name: 'twitter:title', content: "KPH VC - Backing Kerala's Top 1% Startups" },
         { 
           name: 'twitter:description', 
           content: 'KPH is an early-stage fund investing in Kerala\'s most promising startups. We back exceptional founders building the next generation of innovative companies.'
@@ -38,12 +38,12 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: '/kph.png' },
         // Additional SEO tags
         { name: 'robots', content: 'index, follow' },
-        { name: 'keywords', content: 'KPH Fund, Kerala venture capital, early stage fund, startup investment, Kerala startups, seed funding Kerala, startup fund' },
-        { name: 'author', content: 'KPH Fund' },
+        { name: 'keywords', content: 'KPH VC, Kerala venture capital, early stage fund, startup investment, Kerala startups, seed funding Kerala, startup fund' },
+        { name: 'author', content: 'KPH VC' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'canonical', href: 'https://kph.fund' }
+        { rel: 'canonical', href: 'https://kph.vc' }
       ]
     }
   },

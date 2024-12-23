@@ -185,7 +185,7 @@ const activeTab = ref('investors')
 
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - KPH Fund` : "KPH Fund - Backing Kerala's Top 1% Startups";
+    return titleChunk ? `${titleChunk} - KPH VC` : "KPH VC - Backing Kerala's Top 1% Startups";
   },
   meta: [
     {
@@ -199,7 +199,7 @@ useHead({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "KPH Fund",
+        "name": "KPH VC",
         "description": "Early-stage investment fund backing Kerala's top 1% startups",
         "url": "https://kph.fund",
         "@type": "InvestmentOrganization",
