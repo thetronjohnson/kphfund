@@ -57,7 +57,7 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 mt-6">
-            <a href="mailto:hello@felixjosemon.com" 
+            <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagAhlw2FFT46HCpa/form" 
                class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
               Get an invite
             </a>
@@ -101,7 +101,7 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 mt-6">
-            <a href="mailto:hi@kiranjohns.com" 
+            <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagep53yTMnwAYJ6k/form" 
                class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
               Pitch Your Startup
             </a>
