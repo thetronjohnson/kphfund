@@ -56,4 +56,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  routeRules: {
+    '/founders': { redirect: 'https://kiranj.notion.site/17b3bcc41a1f80c580facf8f2d6aa7d9?v=fb953e82107c46f38928efd94e3d19f8' }
+  }
 })
