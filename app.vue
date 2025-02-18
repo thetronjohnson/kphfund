@@ -1,5 +1,12 @@
 <template>
   <main class="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div v-if="announcements" class="bg-indigo-600">
+      <div class="max-w-2xl mx-auto px-4 py-5">
+        <div class="text-white text-sm text-center font-medium">
+          <ContentRenderer class="announcements" :value="announcements" />
+        </div>
+      </div>
+    </div>
     <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <h1 class="text-5xl font-bold mb-8 text-black bg-clip-text">
         KPH.VC
@@ -180,8 +187,8 @@
 </template>
 
 <script setup>
-// Add state management for tabs
 const activeTab = ref('investors')
+const { data: announcements } = await useAsyncData('announcements', () => queryContent('/announcements').findOne())
 
 useHead({
   titleTemplate: (titleChunk) => {
@@ -217,3 +224,9 @@ useHead({
   ]
 })
 </script>
+
+<style scoped>
+.announcements :deep(a) {
+  text-decoration: underline !important;
+}
+</style>
