@@ -16,103 +16,67 @@
         Join Kerala's <em class="font-medium">most powerful network</em> of investors and founders building the next billion-dollar technology companies. <span class="text-indigo-600 font-medium">Request an invitation</span>
       </p>
 
-      <!-- Navigation Tabs -->
-      <div class="flex space-x-4 mb-12 border-b border-gray-200">
-        <button @click="activeTab = 'investors'" 
-                :class="['px-6 py-3 text-lg font-medium transition-colors duration-200',
-                         activeTab === 'investors' 
-                           ? 'text-indigo-600 border-b-2 border-indigo-600' 
-                           : 'text-gray-500 hover:text-gray-700']">
-          For Investors
-        </button>
-        <button @click="activeTab = 'founders'"
-                :class="['px-6 py-3 text-lg font-medium transition-colors duration-200',
-                         activeTab === 'founders' 
-                           ? 'text-indigo-600 border-b-2 border-indigo-600' 
-                           : 'text-gray-500 hover:text-gray-700']">
-          For Founders
-        </button>
-      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Investors Section -->
+        <div class="space-y-12">
+          <h2 class="text-2xl font-semibold mb-6 text-gray-800">For Investors</h2>
+          <p class="text-gray-600 mb-6">Our carefully curated members represent Kerala's most accomplished business leaders and investors.</p>
+          <ul class="space-y-4 mb-12">
+            <li class="flex items-center space-x-3 text-gray-600">
+              <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Get first access to high-potential startups before they hit the mainstream</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-600">
+              <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Connect with Kerala's most successful entrepreneurs and investors</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-600">
+              <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Join intimate roundtables and get proprietary market intelligence</span>
+            </li>
+          </ul>
 
-      <!-- Investors Section -->
-      <div v-if="activeTab === 'investors'" class="space-y-12">
-        <ul class="space-y-4 mb-12">
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Get first access to high-potential startups before they hit the mainstream</span>
-          </li>
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Connect with Kerala's most successful entrepreneurs and investors</span>
-          </li>
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Join intimate roundtables and get proprietary market intelligence</span>
-          </li>
-        </ul>
-
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-          <h2 class="text-2xl font-semibold mb-6 text-gray-800">Join Our Investor Network</h2>
-          <p class="text-gray-600 leading-relaxed mb-8">
-            Our carefully curated members represent Kerala's most accomplished business leaders and investors. Request an invitation to join this exclusive community.
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 mt-6">
-            <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagAhlw2FFT46HCpa/form" 
-               class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
-              Get an invite
-            </a>
-          </div>
+          <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagAhlw2FFT46HCpa/form" 
+             class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
+            Join Our Investor Network
+          </a>
         </div>
-      </div>
 
-      <!-- Founders Section -->
-      <div v-if="activeTab === 'founders'" class="space-y-12">
-        <ul class="space-y-4 mb-12">
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Direct access to active angel investors and successful founders as mentors</span>
-          </li>
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Hands-on support for product strategy, hiring, and fundraising</span>
-          </li>
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Tap into Kerala's largest startup ecosystem with 1000+ founders</span>
-          </li>
-          <li class="flex items-center space-x-3 text-gray-600">
-            <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Exclusive access to startup resources, tools, and partners</span>
-          </li>
-        </ul>
+        <!-- Founders Section -->
+        <div class="space-y-12">
+          <h2 class="text-2xl font-semibold mb-6 text-gray-800">For Founders</h2>
+          <p class="text-gray-600 mb-6">We're looking for exceptional founders building innovative products from Kerala</p>
+          <ul class="space-y-4 mb-12">
+            <li class="flex items-center space-x-3 text-gray-600">
+              <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Direct access to active angel investors and successful founders as mentors</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-600">
+              <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Hands-on support for product strategy, hiring, and fundraising</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-600">
+              <svg class="h-6 w-6 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Tap into Kerala's largest startup ecosystem with 1000+ founders</span>
+            </li>
+          </ul>
 
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-          <h2 class="text-2xl font-semibold mb-6 text-gray-800">Pitch Your Startup</h2>
-          <p class="text-gray-600 leading-relaxed mb-8">
-            We're looking for exceptional founders building innovative products. If you're ready to take your startup to the next level, we'd love to hear from you.
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 mt-6">
-            <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagep53yTMnwAYJ6k/form" 
-               class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
-              Pitch Your Startup
-            </a>
-          </div>
+          <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagep53yTMnwAYJ6k/form" 
+             class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
+            Pitch Your Startup Now!
+          </a>
         </div>
       </div>
 
@@ -187,7 +151,6 @@
 </template>
 
 <script setup>
-const activeTab = ref('investors')
 const { data: announcements } = await useAsyncData('announcements', () => queryContent('/announcements').findOne())
 
 useHead({
