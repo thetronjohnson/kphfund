@@ -55,5 +55,16 @@ export default defineNuxtConfig({
         searchDepth: 3,
       },
     },
-  }
+  },
+  runtimeConfig: {
+    // Server-only keys
+    startupPassword: 'hello@kphvc',
+    // Keys exposed to the client
+    public: {
+      // Public keys here
+    }
+  },
+  plugins: [
+    '~/plugins/no-index.js'
+  ]
 })

@@ -1,4 +1,8 @@
 User-agent: *
+Disallow: /startups/
+Disallow: /password
+
+# Allow other pages
 Allow: /
 
 Sitemap: https://kph.fund/sitemap.xml
