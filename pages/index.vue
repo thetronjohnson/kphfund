@@ -7,11 +7,47 @@
         </div>
       </div>
     </div>
-    <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-      <h1 class="text-5xl font-bold mb-8 text-black bg-clip-text">
-        KPH.VC
-      </h1>
 
+    <!-- New Navbar -->
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="/" class="text-2xl font-bold text-indigo-600">KPH.VC</a>
+          </div>
+          
+          <!-- Navigation Links -->
+          <div class="hidden sm:flex sm:space-x-8">
+            <a href="https://kph.club" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Community</a>
+            <a href="https://wiki.kph.club" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Wiki</a>
+            <NuxtLink to="/apply" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Founder Application</NuxtLink>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="sm:hidden">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path v-if="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div v-if="mobileMenuOpen" class="sm:hidden">
+        <div class="pt-2 pb-3 space-y-1">
+          <a href="https://kph.club" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-indigo-600 hover:bg-gray-50">Community</a>
+          <a href="https://wiki.kph.club" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-indigo-600 hover:bg-gray-50">Wiki</a>
+          <NuxtLink to="/apply" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-indigo-600 hover:bg-gray-50">Founder Application</NuxtLink>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <p class="text-lg text-gray-600 leading-relaxed mb-8">
         Join Kerala's <em class="font-medium">most powerful network</em> of investors and founders building the next billion-dollar technology companies. <span class="text-indigo-600 font-medium">Request an invitation</span>
       </p>
@@ -73,7 +109,7 @@
             </li>
           </ul>
 
-          <a target="_blank" href="https://airtable.com/appEfE9rBrZlBo3vM/pagep53yTMnwAYJ6k/form" 
+          <a target="_blank" href="https://kph.vc/apply" 
              class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md w-full sm:w-auto">
             Pitch Your Startup Now!
           </a>
@@ -151,7 +187,11 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 const { data: announcements } = await useAsyncData('announcements', () => queryContent('/announcements').findOne())
+
+const mobileMenuOpen = ref(false)
 
 useHead({
   titleTemplate: (titleChunk) => {
